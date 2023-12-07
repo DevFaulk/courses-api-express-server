@@ -11,7 +11,20 @@ function appendCourseData(course) {
   let elementsWithId = Array.from(elements).filter((element) => {
     return element.hasAttribute('id');
   });
-  console.log(elementsWithId);
+  console.log(course)
+  for (const element of elementsWithId) {
+    let elementSelected = document.getElementById(
+      `#${element.getAttribute('id')}`
+    );
+    switch (element) {
+      case element.hasAttribute('#mainHeader'):
+        elementSelected.innerText
+        break;
+
+      default:
+        break;
+    }
+  }
 }
 
 window.onload = function () {
