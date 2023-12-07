@@ -18,7 +18,7 @@ function createTableData(courses) {
     tc3.innerText = course.courseName;
     let tc4 = tr.insertCell();
     let link = document.createElement('a');
-    link.href = `http://localhost:8081/details.html?courseid=${course.id}`;
+    link.href = `http://localhost:5500/details.html?courseid=${course.id}`;
     link.text = `Learn More`;
     tc4.appendChild(link);
   }
