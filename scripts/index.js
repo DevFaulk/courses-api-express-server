@@ -24,4 +24,4 @@ function createTableData(courses) {
   }
 }
 
-window.onload = fetchCourses;
+fetchCourses();
