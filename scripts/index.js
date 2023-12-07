@@ -16,6 +16,11 @@ function createTableData(courses) {
     tc2.innerText = course.courseNum;
     let tc3 = tr.insertCell();
     tc3.innerText = course.courseName;
+    let tc4 = tr.insertCell();
+    let link = document.createElement('a');
+    link.href = `http://localhost:8081/details.html?courseid=${course.id}`;
+    link.text = `Learn More`;
+    tc4.appendChild(link);
   }
 }
 
