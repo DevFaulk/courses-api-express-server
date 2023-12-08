@@ -8,7 +8,7 @@ async function fetchCourse(id) {
 }
 
 function appendCourseData(course) {
-  let elements = document.querySelectorAll('div, span');
+  let elements = document.querySelectorAll('div, span, h1, h2, h3');
   let elementsWithId = Array.from(elements).filter((element) => {
     return element.hasAttribute('id');
   });
